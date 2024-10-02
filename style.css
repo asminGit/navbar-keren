@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-nav{
+    background-color: rgba(234, 234, 234, 1);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    gap: 30px;
+}
+
+li img{
+    height: 30px;
+    transition: 0.2s;
+}
+
+li:hover img{
+    transform: rotate(10deg);
+}
+
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    background-color: rgba(234, 234, 234, 1);
+    height: 900px;
+    width: 500px;
+    margin-top: 970px;
+
+}
+
+.navbar2{
+    max-height: 0px;
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+li{
+    background-color: rgba(80, 80, 255, 0);
+    width: 250px;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: 0.2s;
+    transform: scale(100%);
+    
+}
+
+li:hover{
+    background-color: rgb(80, 80, 255);
+    transform: scale(110%);
+}
+
+li img{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+li:hover img{
+    transform: rotate(340deg);
+}
+
+
+li h1{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: rgb(12, 12, 12);
+}
+
+
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.listbar{
+    background-color: rgb(173, 173, 173);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listbar img{
+    height: 35px;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: 0.2s;
+}
+
+.listbar:hover img{
+    transform: rotate(10deg);
+
+}
+
+@media(max-width:600px){
+    ul{
+        width: 200px;
+    }
+
+    li h1{
+        font-size: 1rem;
+    }
+
+    li img{
+        height: 20px;
+    }
+
+    li{
+        background-color: rgba(80, 80, 255, 0);
+        width: 186px;
+        height: 40px;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        transition: 0.2s;
+        transform: scale(100%);
+    }
+    
+    li:hover{
+        background-color: rgb(80, 80, 255);
+        transform: scale(110%);
+    }
+
+    ul li{
+        margin-top: 15px;
+    }
+}
+
+
